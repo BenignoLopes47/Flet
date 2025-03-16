@@ -1,6 +1,6 @@
 import flet as ft
 def main(page: ft.Page):
-    page.title = "Hello world!"
+    page.title = "Hello"
     page.add(ft.Text("Hello World!")) 
 
     def button_click(e):
