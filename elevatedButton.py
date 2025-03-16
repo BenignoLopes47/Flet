@@ -68,7 +68,7 @@ def main(page: ft.Page):
 ft.app(target=main) """
 
 
-
+""" 
 import flet
 from flet import ElevatedButton, Page, Text
 def main(page: Page):
@@ -80,6 +80,48 @@ def main(page: Page):
             icon="park_rounded",
             icon_color="green400",
         ),
+    )
+
+
+flet.app(target=main) """
+
+
+import flet
+from flet import (
+BorderSide,
+ButtonStyle,
+ElevatedButton,
+Page,
+RoundedRectangleBorder,
+colors,
+)
+        
+def main(page: Page):
+    page.padding = 50
+    page.add(
+        ElevatedButton(
+            "Styled button 1",
+            style=ButtonStyle(
+                color={
+                    "hovered": colors.WHITE,
+                    "focused": colors.BLUE,
+                    "": colors.BLACK,
+                },
+                bgcolor={"focused": colors.PINK_200, "": colors.YELLOW},
+                padding={"hovered": 20},
+                overlay_color=colors.TRANSPARENT,
+                elevation={"pressed": 0, "": 1},
+                animation_duration=500,
+                side={
+                    "": BorderSide(1, colors.BLUE),
+                    "hovered": BorderSide(2, colors.BLUE),
+                },
+                shape={
+                    "hovered": RoundedRectangleBorder(radius=20),
+                    "": RoundedRectangleBorder(radius=2),
+                },
+            ),
+        )
     )
 
 
