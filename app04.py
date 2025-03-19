@@ -1,6 +1,6 @@
 import flet as ft
 # Importe do arquivo onde salvou os widgets personalizados
-from Custom_Flet_widgets import CustomTextField
+from Custom_Flet_Widgets import CustomTextField
 
 
 def main(page: ft.Page):
